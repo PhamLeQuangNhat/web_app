@@ -6,7 +6,7 @@ import numpy as np
 if __name__ == '__main__':
     fe = FeatureExtractor()
 
-    for img_path in sorted(Path("./static/img").glob("*.jpg")):
+    for img_path in sorted(Path("./static/img").glob("*.png")):
         print(img_path)  # e.g., ./static/img/xxx.jpg
         feature = fe.extract(img=Image.open(img_path))
 
